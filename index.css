@@ -1,0 +1,257 @@
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	background-color: #C4620D;
+	color: black;
+	/* First value controls top/bottom padding. Second value controls left/right */
+	padding: 5px 10px;
+}
+section {
+	padding: 20px 0;
+}
+footer {
+	background-color: #C4620D;
+	padding: 5px 10px;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+}
+/* Helper Classes */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.small-text {
+	font-size: 6px;
+}
+.title-text {
+	font-size: 50px;
+	margin: 20px auto;
+}
+.large-text {
+	font-size: 24px
+}
+.box {
+	background-color: #908B8B;
+	margin-bottom: 20px;
+	border: 5px solid #35526D;
+}
+.blue {
+	background-color: #35526D;
+	padding: 10px;
+}
+.blue-tab:after {
+	content: " ";
+	width: 100px;
+	height: 10px;
+	background-color: #35526D;
+	display: block;
+	margin-top: 12px;
+	border-radius: 0px 5px 5px 0px;
+}
+.button {
+	background-color:  #C4620D;
+	border-radius: 0px 15px 15px 0px;
+	color: black;
+	font-weight: bold;
+	padding: 5px 15px;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+}
+.author {
+	background-color: #9D9897;
+	color: #333;
+	margin: 0px;
+	text-decoration: none;
+	border: 5px solid #35526D;
+}
+.padding-top {
+	padding-top: 0px;	
+}
+.hidden {
+	display: none;	
+}
+/* Grid Classes */
+.row:before, .row:after {
+	display: table;
+	content: " ";
+}
+.row:after {
+	clear: both;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+	float: left;
+}
+.col-1 {
+	width: 8.33333333%;
+}
+.col-2 {
+	width: 16.66666666%;	
+}
+.col-3 {
+	width: 25%;	
+}
+.col-4 {
+	width: 33.33333333%;
+}
+.col-5 {
+	width: 41.66666666%;	
+}
+.col-6 {
+	width: 50%;	
+}
+.col-7 {
+	width: 58.33333333%;	
+}
+.col-8 {
+	width: 66.66666666%;
+}
+.col-9 {
+	width: 75%;	
+}
+.col-10 {
+	width: 83.33333333%;	
+}
+.col-11 {
+	width: 91.66666666%;	
+}
+.col-12 {
+	width: 100%;	
+}
+.col-wrap {
+	/* Don't add anything else */
+	padding: 20px;	
+}
+.padding-top {
+	padding-top: 0px;	
+}
+/* Class Selectors */
+.container {
+	margin: auto;
+	width: 1170px;
+}
+/* 
+ * ID Selectors 
+*/
+#title {
+	font-family: 'Courgette', cursive;
+	text-transform: uppercase;
+}
+/* Navbar */
+#navbar {
+	list-style: none;
+	margin: 0px;
+	float: right;
+}
+#navbar li {
+	display: inline-block;	
+	padding-right: 25px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#navbar a {
+	text-decoration: none;
+	color: black;
+}
+#navbar-bottom {
+	list-style: none;
+	margin: 0px;
+	float: right;
+}
+#navbar-bottom li {
+	display: inline-block;	
+	padding-right: 110px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+}
+#navbar-bottom a {
+	text-decoration: none;
+	color: black;
+}
+/* Responsive Styles */
+@media (max-width: 767px) {
+	header {
+		text-align: center;
+	}
+	.container {
+		width: 100%;	
+	}
+	.container-wrap {
+		padding: 0 10px;
+	}
+	.button {
+		width: 90%;
+		padding: 15px;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+		float: left;
+		width: 100%;
+	}
+	.title-text {
+		font-size: 36px;
+	}
+	.author {
+		text-align: center;
+	}
+	.author .col-9 p{
+		font-size: 16px;
+	}
+	.author h1 {
+		font-size: 35px;
+		margin-top: 0px;
+		text-align: center;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropdown-btn {
+		padding: 10px 20px;
+		width: 200px;
+		color: black;
+		border-radius: 4px;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+	}
+	.dropdown-menu {
+		background-color: #C4620D;
+		width: 100%;
+		position: absolute;
+		display: none;
+		border-radius: 0 0 4px 4px;
+	}
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	.dropdown:hover .dropdown-btn {
+		border-radius: 4px 4px 0px 0px;
+	}
+	.dropdown-menu ul {
+		margin: 0;
+		padding: 0px;
+		list-style: none;
+	}
+	.dropdown-menu li {
+		padding: 0 0 10px 10px;
+	}
+	.dropdown-menu a {
+		color: black;
+		text-decoration: none;
+	}
+}
